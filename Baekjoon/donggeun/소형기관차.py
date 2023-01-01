@@ -4,6 +4,7 @@ input = sys.stdin.readline
 n = int(input())
 nums = list(map(int,input().split()))
 m = int(input())
+
 pre_fix = [0]
 dp = [[0]*(n+1) for _ in range(4)]
 for i in nums:
