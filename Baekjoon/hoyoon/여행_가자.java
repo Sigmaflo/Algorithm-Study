@@ -2,68 +2,48 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.StringTokenizer;
-
-class City {
-    int name;
-    Set<City> cities = new HashSet<>();
-
-    public City(int name) {
-        this.name = name;
-    }
-
-    public boolean isLinked(int finding) {
-        for(City city : cities) {
-            if(city.name == finding) return true;
-            if(city.isLinked(finding, name)) return true;
-        }
-        return false;
-    }
-
-    private boolean isLinked(int finding, final int from) {
-        if(from == name) return false;
-        for(City city : cities) {
-            if(city.name == finding) return true;
-            if(city.isLinked(finding, from)) return true;
-        }
-        return false;
-    }
-}
 
 public class 여행_가자 {
+    private static int[] parent;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        int M = Integer.parseInt(br.readLine());
-        City[] links = new City[N + 1];
-        String answer = "YES";
+        int n = Integer.parseInt(br.readLine()), m = Integer.parseInt(br.readLine());
+        int[][] map = new int[n][];
+        int[] plan;
 
-        for(int i = 1; i <= N; i++) {
-            links[i] = new City(i);
+        parent = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            map[i] = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            parent[i] = i;
         }
-
-        for(int from = 1; from <= N; from++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            for(int to = 1; to <= N; to++) {
-                if(st.nextToken().equals("0")) continue;
-                links[from].cities.add(links[to]);
-            }
-        }
-
-        int[] route = Arrays.stream(br.readLine().split(" "))
-                .mapToInt(Integer::parseInt)
-                .toArray();
-
-        for(int i = 0; i < M - 1; i++) {
-            if(!links[route[i + 1]].isLinked(route[i])) {
-                answer = "NO";
-                break;
-            }
-        }
-
-        System.out.println(answer);
+        plan = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).map(i -> i - 1).toArray();
         br.close();
+
+        for(int i = 0; i < n - 1; i++){
+            for(int j = i + 1; j < n; j++){
+                if(map[i][j] == 1){
+                    int ip = findParent(i), jp = findParent(j);
+                    parent[jp] = ip;
+                }
+            }
+        }
+
+        int p = findParent(plan[0]);
+        for(int i = 1; i < m; i++){
+            if(p != findParent(plan[i])){
+                System.out.println("NO");
+                return;
+            }
+        }
+        System.out.println("YES");
+    }
+
+    private static int findParent(int child){
+        if(child == parent[child])
+            return child;
+        else
+            return (parent[child] = findParent(parent[child]));
     }
 }
