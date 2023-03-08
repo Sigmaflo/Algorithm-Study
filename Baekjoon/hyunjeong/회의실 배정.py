@@ -1,15 +1,15 @@
 import sys
 import heapq
 
-# meetings = []
-# n = map(int, sys.stdin.readline().split())
-# for i in range(n):
-#     a, b = map(int, sys.stdin.readline().split())
-#     meetings.append((a, b))
+meetings = []
+n = map(int, sys.stdin.readline().split())
+for i in range(n):
+     a, b = map(int, sys.stdin.readline().split())
+     meetings.append((a, b))
 
 #########TESTING###########
-n = 11
-meetings = [(1,4), (3,5), (0,6), (5,7), (3,8), (5,9), (6,10), (8,11), (8,12), (2,13), (12,14)]
+# n = 11
+# meetings = [(1,4), (3,5), (0,6), (5,7), (3,8), (5,9), (6,10), (8,11), (8,12), (2,13), (12,14)]
 
 sorted_intervals = sorted(meetings)
 booked_rooms = []
