@@ -5,7 +5,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 import java.util.ArrayList;
 
-public class Main {
+public class 트리의_지름 {
     static ArrayList<Node>[] arr;
     static boolean[] check;
     static int selectNode;
