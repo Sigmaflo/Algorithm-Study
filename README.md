@@ -35,6 +35,7 @@
 |[박철민](https://github.com/fe26min)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=fe26min)](https://solved.ac/fe26min)|[최은녕](https://github.com/doseee)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=doseee)](https://solved.ac/doseee)|
 |[이현진](https://github.com/ramelHJ)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=ehj1107)](https://solved.ac/ehj1107)|[이호윤](https://github.com/HoYoon-Lee)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=silvernyangz)](https://solved.ac/silvernyangz)|
 |[태현정](https://github.com/staehj)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sophiatae33)](https://solved.ac/sophiatae33)|[홍승아](https://github.com/SeungAh-Hong)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=ghdtmddk1516)](https://solved.ac/ghdtmddk1516)|
+|[이명주](https://github.com/mmmmjjj)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=qorwnsmj)](https://solved.ac/qorwnsmj)||
 
 
 <br><br>
@@ -48,6 +49,6 @@
 |3/12(일)|3/13(월)|3/14(화)|3/15(수)|3/16(목)|3/17(금)|3/18(토)|
 |`주성`|`동근`|`철민`|`은녕`|`현진`|`호윤`|`현정`|
 |3/19(일)|3/20(월)|3/21(화)|3/22(수)|3/23(목)|3/24(금)|3/25(토)|
-|`승아`|`성용`|`세진`|`주성`|`동근`|`철민`|`은녕`|
+|`승아`|`명주`|`성용`|`세진`|`주성`|`동근`|`철민`|
 |3/26(일)|3/27(월)|3/28(화)|3/29(수)|3/30(목)|3/31(금)||
-|`현진`|`호윤`|`현정`|`승아`|`성용`|`세진`||
+|`은녕`|`현진`|`호윤`|`현정`|`승아`|`명주`||
