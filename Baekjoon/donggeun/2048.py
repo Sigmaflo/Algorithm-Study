@@ -59,7 +59,6 @@ def south(n: int, board: list[list[int]]):
         if m == 1:
             tmp.append(tmp_board[0])
         tmp.extend([0]*(n-len(tmp)))
-        print("tmp", tmp)
         for k in range(n):
             res[n - k - 1][i] = tmp[k]
 
@@ -121,21 +120,6 @@ def west(n, board: list[list[int]]):
         res.append(tmp[::])
 
     return res
-# a = [[2]]
-a = [[2,4,2],[2,8,4],[2,8,8]]
-# a = [[2,2,2],[4,4,4],[8,8,8]]
-# a = [[0, 2, 4], [0, 4, 8], [0, 8, 16]]
-# a = [[0,0,0,2] for _ in range(4)]
-# a = [[2,0,2],[0,2,0],[0,0,2]]
-
-# print(west(len(a), a))
-# print(east(len(a), a))
-# print(north(len(a), a))
-# print(south(len(a), a))
-move = [east, west, south, north]
-way = [i for i in range(4)] # 동서남북 
-n = int(input()) # 1이라면 안변함
-board = [list(map(int,input().split())) for _ in range(n)]
 
 def max_block(board: list[list[int]]):
     res = 0
@@ -143,10 +127,18 @@ def max_block(board: list[list[int]]):
         for j in range(n):
             res = max(res, board[i][j])
     return res
+
+move = [east, west, south, north]
+way = [i for i in range(4)] # 동서남북 
+n = int(input()) # 1이라면 안변함
+board = [list(map(int,input().split())) for _ in range(n)]
+
+
 ans = max_block(board)
 for x in product(way, repeat=5):
     tmp_ = board[::]
     for y in x:
         tmp_ = move[y](n, tmp_)
     ans = max(ans, max_block(tmp_))
-print(ans)    
+
+print(ans)
