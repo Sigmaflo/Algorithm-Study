@@ -1,6 +1,6 @@
 # 완탐은 시초
 # 그렇다면 그리디?
-# 아니면 dp 혹은 bfs 돌리는건가 다익스트라
+# 아니면dp 그래프탐색
 import sys
 input = sys.stdin.readline
 
