@@ -14,9 +14,9 @@ public class 용액 {
         }
         int left = 0;
         int right = n-1;
-        long leftAns = 2000000000l;
-        long rightAns = 2000000000l;
-        long shake = leftAns + rightAns;
+        long leftAns = 0;
+        long rightAns = 0;
+        long shake = Long.MAX_VALUE;
         while (left < right) {
             long tmp = arr[left] + arr[right];
             if (Math.abs(tmp) < shake) {
@@ -25,9 +25,9 @@ public class 용액 {
                 rightAns = arr[right];
             }
             if (tmp < 0) {
-                left += 1;
+                left++;
             } else if (tmp > 0) {
-                right -= 1;
+                right--;
             } else {
                 leftAns = arr[left];
                 rightAns = arr[right];
