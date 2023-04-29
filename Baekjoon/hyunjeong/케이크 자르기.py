@@ -11,7 +11,7 @@ def is_q_points(mid):
             count += 1
     return count > q
 
-# sys.stdin = open('케이크 자르기.txt', 'r')
+sys.stdin = open('케이크 자르기.txt', 'r')
 input = sys.stdin.readline
 
 # n = number of cuts
