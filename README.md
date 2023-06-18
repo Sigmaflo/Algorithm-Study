@@ -31,7 +31,7 @@
 |[김성용](https://github.com/Soeng-dev)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=tjddyd1565)](https://solved.ac/tjddyd1565)|[김세진](https://github.com/kim-se-jin)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=mong7399)](https://solved.ac/mong7399)|
 |[김주성](https://github.com/sigmaflo)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=sigmaflo2)](https://solved.ac/sigmaflo2)|[최동근](https://github.com/reddevilmidzy)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=cdg0228)](https://solved.ac/cdg0228)|
 |[박철민](https://github.com/fe26min)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=fe26min)](https://solved.ac/fe26min)|[최은녕](https://github.com/doseee)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=doseee)](https://solved.ac/doseee)|
-|[태현정](https://github.com/staehj)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=stae)](https://solved.ac/stae)|[이명주](https://github.com/mmmmjjj)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=qorwnsmj)](https://solved.ac/qorwnsmj)|
+|[태현정](https://github.com/staehj)|[![Solved.ac프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=stae)](https://solved.ac/stae)|||
 
 
 <br><br>
@@ -45,6 +45,6 @@
 |6/11(일)|6/12(월)|6/13(화)|6/14(수)|6/15(목)|6/16(금)|6/17(토)|
 |`동근`|`철민`|`은녕`|`현정`|`명주`|`성용`|`세진`|
 |6/18(일)|6/19(월)|6/20(화)|6/21(수)|6/22(목)|6/23(금)|6/24(토)|
-|`주성`|`동근`|`철민`|`은녕`|`현정`|`명주`|`성용`|
+|`주성`|`동근`|`철민`|`은녕`|`현정`|`성용`|`세진`|
 |6/25(일)|6/26(월)|6/27(화)|6/28(수)|6/29(목)|6/30(금)||
-|`세진`|`주성`|`동근`|`철민`|`은녕`|`현정`||
+|`주성`|`동근`|`철민`|`은녕`|`현정`|`성용`||
